@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Para ti, mi amor</title>
+</head>
+<body>
+    <div class="initial-screen" id="initialScreen">
+        <div class="question-container">
+            <h1>¿Eres el amor de mi vida?</h1>
+            <div class="buttons">
+                <button onclick="showContent(true)">Sí</button>
+                <button onclick="moveButton(this)" class="no-btn">No</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content hidden" id="mainContent">
+        <header>
+            <h1>Para el amor de mi vida</h1>
+        </header>
+
+        <section class="gallery">
+            <h2>❤️ Momentos Especiales ❤️</h2>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <div class="photo-frame">
+                        <img src="./img/foto01.jpg" alt="Momento especial 1">
+                        <div class="photo-overlay">
+                            <p class="quote">Cada día me enamoro más de tu sonrisa, eres mi razón de ser feliz</p>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-frame">
+                        <img src="./img/foto02.jpg" alt="Momento especial 2">
+                        <div class="photo-overlay">
+                            <p class="quote">Contigo los días grises se vuelven arcoíris de amor</p>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-frame">
+                        <img src="./img/foto03.jpg" alt="Momento especial 3">
+                        <div class="photo-overlay">
+                            <p class="quote">Tu amor es la magia que hace latir mi corazón</p>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-frame">
+                        <img src="./img/foto04.jpg" alt="Momento especial 4">
+                        <div class="photo-overlay">
+                            <p class="quote">Cada momento a tu lado es un tesoro que guardo en mi corazón</p>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="love-quotes">
+            <h2>Palabras de Amor</h2>
+            <div class="quotes-container">
+                <div class="quote-card">
+                    <i class="fas fa-heart"></i>
+                    <p>Eres la razón de mi felicidad y el amor de mi vida</p>
+                </div>
+                <div class="quote-card">
+                    <i class="fas fa-heart"></i>
+                    <p>Cada día a tu lado es una nueva aventura que atesoro</p>
+                </div>
+                <div class="quote-card">
+                    <i class="fas fa-heart"></i>
+                    <p>Tu amor es el regalo más hermoso que la vida me ha dado</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+    <footer>
+        <p>Creado por MACC - 2025</p>
+    </footer>
+</body>
+</html>
