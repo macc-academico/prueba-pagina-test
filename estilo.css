@@ -319,6 +319,117 @@ h2 {
     line-height: 1.6;
 }
 
+.roses-and-verses {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+}
+
+.roses-and-verses h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.roses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.rose-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.rose-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.rose-card.active {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+}
+
+.rose-card.active .verse {
+    color: white;
+    transform: scale(1.1);
+}
+
+.rose-card.active .rose-image i {
+    color: white;
+    animation: spin-heart 1s ease-in-out;
+}
+
+@keyframes spin-heart {
+    0% {
+        transform: scale(1) rotate(0);
+    }
+    50% {
+        transform: scale(1.5) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.rose-image {
+    color: #ff6b6b;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.rose-image i {
+    animation: pulse 1.5s infinite;
+    transition: all 0.3s ease;
+}
+
+.verse {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-style: italic;
+    transition: all 0.3s ease;
+}
+
+.sparkle {
+    position: absolute;
+    background: white;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes sparkle {
+    0% {
+        transform: scale(0) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) translate(var(--tx), var(--ty));
+        opacity: 0;
+    }
+}
+
 footer {
     text-align: center;
     padding: 1rem;
@@ -340,7 +451,7 @@ footer {
         font-size: 1.8rem;
     }
 
-    .photo-grid, .quotes-container {
+    .photo-grid, .quotes-container, .roses-container {
         grid-template-columns: 1fr;
     }
 
